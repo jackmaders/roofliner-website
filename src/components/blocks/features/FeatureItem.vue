@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center justify-start">
+  <div class="flex flex-col items-center justify-start gap-1">
     <!-- mobile burger icon -->
     <font-awesome-icon :icon="props.icon" class="text-6xl" />
     <span class="text-xl font-extrabold text-center text-black uppercase">
