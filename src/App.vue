@@ -1,26 +1,21 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
-import TheWelcome from "./components/TheWelcome.vue";
+import FeaturesBlock from "./components/blocks/features/FeaturesBlock.vue";
+import HeaderBlock from "./components/blocks/header/HeaderBlock.vue";
+import OptionsBlock from "./components/blocks/options/OptionsBlock.vue";
+import ReviewsBlock from "./components/blocks/reviews/ReviewsBlock.vue";
+import TheFooter from "./components/layout/TheFooter.vue";
+import TheNavbar from "./components/layout/TheNavbar.vue";
 </script>
 
 <template>
-  <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="./assets/logo.svg"
-      width="125"
-      height="125"
-    />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
+  <TheNavbar></TheNavbar>
   <main>
-    <TheWelcome />
+    <HeaderBlock></HeaderBlock>
+    <OptionsBlock></OptionsBlock>
+    <FeaturesBlock></FeaturesBlock>
+    <ReviewsBlock></ReviewsBlock>
   </main>
+  <TheFooter></TheFooter>
 </template>
 
 <style scoped>
