@@ -17,6 +17,7 @@
 <script setup>
 import ReviewItem from "./ReviewItem.vue";
 
+// TODO: pull reviews from API
 const googleReviews = [
   {
     name: "Michael Chase",
