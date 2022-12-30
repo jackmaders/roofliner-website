@@ -18,7 +18,7 @@
         <span class="text-roofliner-red">warm</span>
         <span> in winter! </span>
       </p>
-      <AppButton class="bg-roofliner-red">Get a quote</AppButton>
+      <AppButton class="bg-roofliner-red">Get a free quote!</AppButton>
     </div>
   </header>
 </template>
