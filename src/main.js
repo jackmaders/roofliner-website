@@ -7,6 +7,10 @@ import {
   faCircleCheck,
   faClock,
   faDropletSlash,
+  faEnvelopeOpen,
+  faMoneyBill,
+  faPhone,
+  faScrewdriverWrench,
   faStar,
   faTimes,
 } from "@fortawesome/free-solid-svg-icons";
@@ -22,7 +26,11 @@ library.add(
   faDropletSlash,
   faClock,
   faCircleCheck,
-  faStar
+  faStar,
+  faPhone,
+  faEnvelopeOpen,
+  faMoneyBill,
+  faScrewdriverWrench
 );
 
 const app = createApp(App);
