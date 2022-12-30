@@ -7,6 +7,7 @@ import {
   faCircleCheck,
   faClock,
   faDropletSlash,
+  faStar,
   faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -14,7 +15,15 @@ import App from "./App.vue";
 
 import "./assets/tailwind.css";
 
-library.add(faBars, faTimes, faBook, faDropletSlash, faClock, faCircleCheck);
+library.add(
+  faBars,
+  faTimes,
+  faBook,
+  faDropletSlash,
+  faClock,
+  faCircleCheck,
+  faStar
+);
 
 const app = createApp(App);
 app.component("font-awesome-icon", FontAwesomeIcon);
