@@ -4,7 +4,7 @@
       <h2 class="text-3xl font-bold text-center text-white uppercase">
         Options
       </h2>
-      <div class="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4">
+      <div class="grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-4">
         <OptionCard class="bg-shingle-tiles">slate tiling </OptionCard>
         <OptionCard class="bg-slate-tiles">shingle tiling </OptionCard>
         <OptionCard class="bg-velux-window">velux windows </OptionCard>
