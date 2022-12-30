@@ -65,7 +65,7 @@ const navbarLinks = [
   },
   {
     name: "Features",
-    path: "#benefits",
+    path: "#features",
   },
   {
     name: "Reviews",
