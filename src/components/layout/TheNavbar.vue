@@ -37,23 +37,22 @@
         />
       </div>
     </div>
-  </nav>
-
-  <!-- mobile dropdown -->
-  <div
-    class="absolute flex-col w-full px-4 overflow-hidden bg-white divide-y md:hidden"
-    :class="showDropdown ? 'flex' : 'hidden'"
-  >
-    <a
-      v-for="(navbarLink, index) in navbarLinks"
-      :key="index"
-      :href="navbarLink.path"
-      class="py-2 text-sm font-semibold text-right uppercase hover:bg-gray-300"
-      @click="showDropdown = !showDropdown"
+    <!-- mobile dropdown -->
+    <div
+      class="absolute flex-col w-full px-4 overflow-hidden bg-white divide-y md:hidden"
+      :class="showDropdown ? 'flex' : 'hidden'"
     >
-      {{ navbarLink.name }}
-    </a>
-  </div>
+      <a
+        v-for="(navbarLink, index) in navbarLinks"
+        :key="index"
+        :href="navbarLink.path"
+        class="py-2 text-sm font-semibold text-right uppercase hover:bg-gray-300"
+        @click="showDropdown = !showDropdown"
+      >
+        {{ navbarLink.name }}
+      </a>
+    </div>
+  </nav>
 </template>
 
 <script setup>
