@@ -2,7 +2,7 @@
   <section id="options" class="p-8 bg-roofliner-blue">
     <div class="container flex flex-col gap-4 mx-auto">
       <h2 class="text-3xl font-bold text-center text-white uppercase">
-        Roof Options
+        Options
       </h2>
       <div class="grid grid-cols-2 gap-2">
         <OptionCard class="bg-shingle-tiles">slate tiling </OptionCard>
@@ -21,17 +21,3 @@
 <script setup>
 import OptionCard from "./OptionCard.vue";
 </script>
-
-<!-- 
-      
-      <div
-        class="container gap-6 p-10 mx-auto text-xl font-bold text-center text-white uppercase"
-      >
-        <div
-          class="grid w-full grid-cols-1 gap-4 text-2xl xs:grid-cols-2 xs:text-xl md:text-2xl md:grid-cols-3 lg:grid-cols-4"
-        >
-          <OptionCard v-for="index in [1, 2, 3, 4, 5, 6]" :key="index"
-            >Slate Tiles</OptionCard
-          >
-        </div>
-      </div> -->
