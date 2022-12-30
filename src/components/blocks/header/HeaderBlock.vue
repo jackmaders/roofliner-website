@@ -1,9 +1,9 @@
 <template>
   <header
     id="header"
-    class="bg-center bg-no-repeat bg-cover bg-header-background"
+    class="p-8 bg-center bg-no-repeat bg-cover bg-header-background"
   >
-    <div class="container flex flex-col items-center gap-6 p-8 mx-auto">
+    <div class="container flex flex-col items-center gap-6 mx-auto">
       <h1
         class="text-3xl font-extrabold text-center text-white uppercase text-shadow-xl"
       >
