@@ -7,6 +7,18 @@ module.exports = {
       zIndex: {
         NAVBAR: "2",
       },
+      borderWidth: {
+        1: "1px",
+      },
+      colors: {
+        roofliner: {
+          blue: "#00ABFB",
+          orange: "#E58F65",
+          red: "#cd5334",
+          black: "#151515",
+          purple: "#9F87AF",
+        },
+      },
       backgroundImage: {
         "header-background":
           "linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('@/assets/images/header-background.webp')",
@@ -19,5 +31,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-textshadow")],
 };
