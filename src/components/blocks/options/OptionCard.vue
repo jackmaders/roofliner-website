@@ -10,4 +10,6 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+// TODO: add modal content
+</script>

@@ -4,12 +4,12 @@
       <h2 class="text-3xl font-bold text-center text-white uppercase">
         Options
       </h2>
-      <div class="grid grid-cols-2 gap-2">
+      <div class="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-4">
         <OptionCard class="bg-shingle-tiles">slate tiling </OptionCard>
         <OptionCard class="bg-slate-tiles">shingle tiling </OptionCard>
         <OptionCard class="bg-velux-window">velux windows </OptionCard>
         <OptionCard class="bg-supply-only">supply only </OptionCard>
-        <!-- TODO: add more options -->
+        <!-- TODO: add more options. 8 in total -->
         <OptionCard class="bg-supply-only">supply only </OptionCard>
         <OptionCard class="bg-supply-only">supply only </OptionCard>
         <!-- -->
