@@ -5,6 +5,7 @@ import {
   faBars,
   faBook,
   faCircleCheck,
+  faCircleInfo,
   faClock,
   faDropletSlash,
   faEnvelopeOpen,
@@ -30,7 +31,8 @@ library.add(
   faPhone,
   faEnvelopeOpen,
   faMoneyBill,
-  faScrewdriverWrench
+  faScrewdriverWrench,
+  faCircleInfo
 );
 
 const app = createApp(App);
