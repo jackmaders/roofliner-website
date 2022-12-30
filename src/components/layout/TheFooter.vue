@@ -1,3 +1,4 @@
+<!-- TODO: add more content -->
 <template>
   <footer id="footer" class="p-8 bg-roofliner-dark">
     <div class="container flex flex-col mx-auto">

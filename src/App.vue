@@ -13,8 +13,8 @@ import TheNavbar from "./components/layout/TheNavbar.vue";
   <TheNavbar></TheNavbar>
   <main>
     <HeaderBlock></HeaderBlock>
-    <OptionsBlock></OptionsBlock>
     <FeaturesBlock></FeaturesBlock>
+    <OptionsBlock></OptionsBlock>
     <ReviewsBlock></ReviewsBlock>
   </main>
   <TheFooter></TheFooter>

@@ -1,8 +1,7 @@
 <template>
   <div class="flex flex-col items-center justify-start gap-1">
-    <!-- mobile burger icon -->
-    <font-awesome-icon :icon="props.icon" class="text-6xl" />
-    <span class="text-xl font-extrabold text-center text-black uppercase">
+    <font-awesome-icon :icon="props.icon" class="text-6xl text-white" />
+    <span class="text-xl font-bold text-center text-white uppercase">
       <slot></slot>
     </span>
   </div>

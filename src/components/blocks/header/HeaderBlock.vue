@@ -3,6 +3,7 @@
     id="header"
     class="p-8 bg-center bg-no-repeat bg-cover bg-header-background"
   >
+    <!-- TODO: layout for large+ screens -->
     <div class="container flex gap-6 mx-auto lg:gap-16">
       <div class="flex flex-col items-center gap-6 justify-evenly basis-0 grow">
         <h1

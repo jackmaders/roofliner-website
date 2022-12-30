@@ -1,4 +1,5 @@
 <template>
+  <!-- TODO: add more text to reviews on medium+ screens -->
   <article class="grid w-full grid-cols-4 gap-1 px-4 py-2 bg-white rounded-lg">
     <p class="col-span-4 text-gray-500">
       {{ dateString }}
