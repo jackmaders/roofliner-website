@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       zIndex: {
         NAVBAR: "2",
+        MODAL: "3",
       },
       borderWidth: {
         1: "1px",
