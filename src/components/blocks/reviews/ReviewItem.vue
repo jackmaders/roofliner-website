@@ -3,23 +3,27 @@
     <p class="col-span-4 text-gray-500">
       {{ dateString }}
     </p>
-    <div class="flex items-center justify-center col-span-1 row-span-2">
+    <div class="flex items-center justify-center col-span-1">
       <img
         class="w-full rounded-full aspect-square"
         :src="props.review.photo"
         alt=""
       />
     </div>
-    <h3 class="col-span-3 text-lg font-bold text-center">
-      {{ props.review.name }}
-    </h3>
-    <div class="col-span-3 col-start-2 text-center">
-      <font-awesome-icon
-        class="text-lg text-yellow-500"
-        icon="star"
-        v-for="index in props.review.rating"
-        :key="index"
-      />
+    <div
+      class="flex flex-col items-center justify-center col-span-3 xs:items-start"
+    >
+      <h3 class="text-lg font-bold">
+        {{ props.review.name }}
+      </h3>
+      <div class="">
+        <font-awesome-icon
+          class="text-lg text-yellow-500"
+          icon="star"
+          v-for="index in props.review.rating"
+          :key="index"
+        />
+      </div>
     </div>
     <p
       class="col-span-4"
