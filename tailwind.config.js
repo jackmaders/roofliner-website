@@ -28,6 +28,8 @@ module.exports = {
           "linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('@/assets/images/slate-tiles.webp')",
         "velux-window":
           "linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('@/assets/images/velux-window.webp')",
+        "supply-only":
+          "linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('@/assets/images/supply-only.webp')",
       },
     },
   },
