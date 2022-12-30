@@ -12,6 +12,8 @@
         <!-- TODO: add more options. 8 in total -->
         <OptionCard class="bg-supply-only">supply only </OptionCard>
         <OptionCard class="bg-supply-only">supply only </OptionCard>
+        <OptionCard class="bg-supply-only">supply only </OptionCard>
+        <OptionCard class="bg-supply-only">supply only </OptionCard>
         <!-- -->
       </div>
     </div>

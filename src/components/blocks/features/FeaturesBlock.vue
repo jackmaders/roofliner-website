@@ -9,8 +9,10 @@
         <FeatureItem icon="money-bill">Lower energy bills</FeatureItem>
         <FeatureItem icon="book">Building Control Approved</FeatureItem>
         <FeatureItem icon="droplet-slash">Watertight in 3 hours </FeatureItem>
-        <FeatureItem icon="screwdriver-wrench">Easy to Installed </FeatureItem>
+        <FeatureItem icon="screwdriver-wrench">Easy to Install </FeatureItem>
         <!-- TODO: add more features-->
+        <FeatureItem icon="screwdriver-wrench">Easy to Install </FeatureItem>
+        <FeatureItem icon="screwdriver-wrench">Easy to Install </FeatureItem>
       </div>
     </div>
   </section>

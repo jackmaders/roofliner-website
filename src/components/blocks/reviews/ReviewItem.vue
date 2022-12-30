@@ -10,9 +10,7 @@
         alt=""
       />
     </div>
-    <div
-      class="flex flex-col items-center justify-center col-span-3 xs:items-start"
-    >
+    <div class="flex flex-col items-start justify-center col-span-3">
       <h3 class="text-lg font-bold">
         {{ props.review.name }}
       </h3>
