@@ -1,18 +1,35 @@
 <template>
   <dialog
     ref="dialog"
-    class="h-20 backdrop:opacity-50 backdrop:bg-black rounded-xl"
+    class="backdrop:opacity-50 backdrop:bg-black rounded-xl"
+    @close="emit('update:component', null)"
   >
-    <!-- TODO: add dynamic rendering of modal components -->
+    <!-- TODO: fix console error with dynamic components  -->
+    <div class="flex flex-col items-end">
+      <font-awesome-icon
+        :icon="'times'"
+        @click="closeDialog()"
+        class="text-xl cursor-pointer"
+      />
+      <component :is="props.component"></component>
+    </div>
   </dialog>
 </template>
 
 <script setup>
-import { onMounted, ref } from "vue";
+import { defineEmits, defineProps, ref, watch } from "vue";
 
-const dialog = ref();
+const props = defineProps({ component: Object });
+const emit = defineEmits(["update:component"]);
 
-onMounted(() => {
-  // dialog.value.showModal();
+const dialog = ref("dialog");
+
+watch(props, (newProps) => {
+  const newComponent = newProps.component;
+  if (newComponent) dialog.value.showModal();
 });
+
+function closeDialog() {
+  if (props.component) dialog.value.close();
+}
 </script>

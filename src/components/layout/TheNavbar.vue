@@ -33,7 +33,7 @@
         <font-awesome-icon
           :icon="showDropdown ? 'times' : 'bars'"
           @click="showDropdown = !showDropdown"
-          class="text-xl md:hidden"
+          class="text-xl cursor-pointer md:hidden"
         />
       </div>
     </div>
