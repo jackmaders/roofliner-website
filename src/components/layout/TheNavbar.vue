@@ -31,7 +31,7 @@
 
         <!-- mobile burger icon -->
         <font-awesome-icon
-          :icon="showDropdown ? 'xmark' : 'bars'"
+          :icon="showDropdown ? 'times' : 'bars'"
           @click="showDropdown = !showDropdown"
           class="text-xl md:hidden"
         />
