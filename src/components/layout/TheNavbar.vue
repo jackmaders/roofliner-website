@@ -60,12 +60,12 @@ import { ref } from "vue";
 
 const navbarLinks = [
   {
-    name: "Options",
-    path: "#options",
-  },
-  {
     name: "Features",
     path: "#features",
+  },
+  {
+    name: "Options",
+    path: "#options",
   },
   {
     name: "Reviews",
