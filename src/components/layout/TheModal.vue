@@ -4,7 +4,6 @@
     class="backdrop:opacity-50 backdrop:bg-black rounded-xl"
     @close="emit('update:component', null)"
   >
-    <!-- TODO: fix console error with dynamic components  -->
     <div class="flex flex-col items-end">
       <font-awesome-icon
         :icon="'times'"

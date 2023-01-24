@@ -20,7 +20,9 @@
           <span class="text-secondary-400">warm</span>
           <span> in winter! </span>
         </p>
-        <AppButton class="bg-secondary-500 md:hidden"
+        <AppButton
+          class="bg-secondary-500 md:hidden"
+          @click="emit('update:component', FormModal)"
           >Get a free quote!
         </AppButton>
       </div>
@@ -32,4 +34,7 @@
 <script setup>
 import AppButton from "../../shared/AppButton.vue";
 import HeaderForm from "./HeaderForm.vue";
+import FormModal from "../../modals/FormModal.vue";
+
+const emit = defineEmits(["update:component"]);
 </script>
