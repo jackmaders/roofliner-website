@@ -1,7 +1,7 @@
 <template>
-  <!-- TODO: replace with AppQuoteForm component -->
-  <aside class="hidden grid-cols-2 gap-2 p-3 bg-primary-600 md:grid rounded-xl">
+  <form class="grid grid-cols-2 gap-2" @submit="handleSubmit">
     <AppInput
+      required
       type="text"
       name="name"
       id="name"
@@ -9,6 +9,7 @@
       class="col-span-2"
     ></AppInput>
     <AppInput
+      required
       type="text"
       name="postcode"
       id="postcode"
@@ -16,6 +17,7 @@
       class="col-span-2"
     ></AppInput>
     <AppInput
+      required
       type="tel"
       name="telephone"
       id="telephone"
@@ -34,6 +36,7 @@
       </option>
     </AppSelect>
     <AppInput
+      required
       type="number"
       name="width"
       id="width"
@@ -41,21 +44,29 @@
       class="col-span-1"
     ></AppInput>
     <AppInput
+      required
       type="number"
       name="height"
       id="height"
       placeholder="Height"
       class="col-span-1"
     ></AppInput>
-    <AppButton class="col-span-2 mx-auto bg-secondary-500"
-      >Get a free quote!</AppButton
-    >
-  </aside>
+    <AppButton class="col-span-2 mx-auto bg-secondary-500">
+      {{ props.buttonText }}
+    </AppButton>
+  </form>
 </template>
+
 <script setup>
-import AppButton from "../../shared/AppButton.vue";
-import AppInput from "../../shared/AppInput.vue";
-import AppSelect from "../../shared/AppSelect.vue";
+import AppButton from "./AppButton.vue";
+import AppInput from "./AppInput.vue";
+import AppSelect from "./AppSelect.vue";
+
+const props = defineProps({ buttonText: String });
+
+function handleSubmit($event) {
+  $event.preventDefault;
+}
 
 //TODO: submit functionality
 

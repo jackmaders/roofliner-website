@@ -1,34 +1,35 @@
 <template>
   <dialog
     ref="dialog"
-    class="backdrop:opacity-50 backdrop:bg-black rounded-xl"
-    @close="emit('update:component', null)"
+    class="flex flex-col gap-2 text-white border-2 backdrop:opacity-50 backdrop:bg-black rounded-xl bg-primary-600"
+    @close="emit('update:modal', null)"
   >
-    <div class="flex flex-col items-end">
+    <div class="flex items-center justify-between mx-2">
+      <h2 class="text-xl font-bold uppercase">{{ modal?.title }}</h2>
       <font-awesome-icon
         :icon="'times'"
         @click="closeDialog()"
         class="text-xl cursor-pointer"
       />
-      <component :is="props.component"></component>
     </div>
+    <component :is="props.modal?.component"></component>
   </dialog>
 </template>
 
 <script setup>
 import { ref, watch } from "vue";
 
-const props = defineProps({ component: Object });
-const emit = defineEmits(["update:component"]);
+const props = defineProps({ modal: Object });
+const emit = defineEmits(["update:modal"]);
 
 const dialog = ref("dialog");
 
 watch(props, (newProps) => {
-  const newComponent = newProps.component;
+  const newComponent = newProps.modal?.component;
   if (newComponent) dialog.value.showModal();
 });
 
 function closeDialog() {
-  if (props.component) dialog.value.close();
+  if (props.modal.component) dialog.value.close();
 }
 </script>
