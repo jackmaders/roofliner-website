@@ -7,9 +7,9 @@ import TheFooter from "./components/layout/TheFooter.vue";
 import TheModal from "./components/layout/TheModal.vue";
 import TheNavbar from "./components/layout/TheNavbar.vue";
 
-import { ref } from "vue";
+import { shallowRef } from "vue";
 
-const modalComponent = ref();
+const modalComponent = shallowRef();
 
 function updateComponent(component) {
   modalComponent.value = component;
@@ -19,7 +19,7 @@ function updateComponent(component) {
 <template>
   <TheNavbar></TheNavbar>
   <main>
-    <HeaderBlock></HeaderBlock>
+    <HeaderBlock @update:component="updateComponent"></HeaderBlock>
     <FeaturesBlock></FeaturesBlock>
     <OptionsBlock></OptionsBlock>
     <ReviewsBlock></ReviewsBlock>
@@ -27,6 +27,6 @@ function updateComponent(component) {
   <TheFooter></TheFooter>
   <TheModal
     :component="modalComponent"
-    @update:component="updateComponent(null)"
+    @update:component="updateComponent"
   ></TheModal>
 </template>

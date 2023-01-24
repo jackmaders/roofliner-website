@@ -16,12 +16,27 @@ module.exports = {
         1: "1px",
       },
       colors: {
-        roofliner: {
-          blue: "#00ABFB",
-          orange: "#E58F65",
-          red: "#cd5334",
-          dark: "#151515",
-          purple: "#9F87AF",
+        primary: {
+          100: "#cceefe",
+          200: "#99defd",
+          300: "#66cdfc",
+          400: "#33bdfb",
+          500: "#00acfa",
+          600: "#008ac8",
+          700: "#006796",
+          800: "#004564",
+          900: "#002232",
+        },
+        secondary: {
+          100: "#fddfd7",
+          200: "#fbbfaf",
+          300: "#f8a086",
+          400: "#f6805e",
+          500: "#f46036",
+          600: "#c34d2b",
+          700: "#923a20",
+          800: "#622616",
+          900: "#31130b",
         },
       },
       backgroundImage: {

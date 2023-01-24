@@ -4,7 +4,6 @@
     class="backdrop:opacity-50 backdrop:bg-black rounded-xl"
     @close="emit('update:component', null)"
   >
-    <!-- TODO: fix console error with dynamic components  -->
     <div class="flex flex-col items-end">
       <font-awesome-icon
         :icon="'times'"
@@ -17,7 +16,7 @@
 </template>
 
 <script setup>
-import { defineEmits, defineProps, ref, watch } from "vue";
+import { ref, watch } from "vue";
 
 const props = defineProps({ component: Object });
 const emit = defineEmits(["update:component"]);
