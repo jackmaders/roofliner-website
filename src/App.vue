@@ -9,24 +9,21 @@ import TheNavbar from "./components/layout/TheNavbar.vue";
 
 import { shallowRef } from "vue";
 
-const modalComponent = shallowRef();
+const currentModal = shallowRef();
 
-function updateComponent(component) {
-  modalComponent.value = component;
+function updateModal(newModal) {
+  currentModal.value = newModal;
 }
 </script>
 
 <template>
   <TheNavbar></TheNavbar>
   <main>
-    <HeaderBlock @update:component="updateComponent"></HeaderBlock>
+    <HeaderBlock @update:modal="updateModal"></HeaderBlock>
     <FeaturesBlock></FeaturesBlock>
     <OptionsBlock></OptionsBlock>
     <ReviewsBlock></ReviewsBlock>
   </main>
   <TheFooter></TheFooter>
-  <TheModal
-    :component="modalComponent"
-    @update:component="updateComponent"
-  ></TheModal>
+  <TheModal :modal="currentModal" @update:modal="updateModal"></TheModal>
 </template>

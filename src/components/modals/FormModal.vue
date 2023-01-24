@@ -1,7 +1,7 @@
 <template>
-  <div></div>
+  <AppQuoteForm button-text="Submit request" />
 </template>
 
-<script>
-export default {};
+<script setup>
+import AppQuoteForm from "../shared/AppQuoteForm.vue";
 </script>
