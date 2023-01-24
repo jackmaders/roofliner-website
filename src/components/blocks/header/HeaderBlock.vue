@@ -15,12 +15,12 @@
           class="text-2xl font-bold text-center text-white uppercase text-shadow-xl"
         >
           <span>Stay </span>
-          <span class="text-roofliner-blue">cool</span>
+          <span class="text-primary-400">cool</span>
           <span> in summer and </span>
-          <span class="text-roofliner-red">warm</span>
+          <span class="text-secondary-400">warm</span>
           <span> in winter! </span>
         </p>
-        <AppButton class="bg-roofliner-red md:hidden"
+        <AppButton class="bg-secondary-500 md:hidden"
           >Get a free quote!
         </AppButton>
       </div>

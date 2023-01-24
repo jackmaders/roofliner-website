@@ -1,5 +1,5 @@
 <template>
-  <section id="reviews" class="p-8 bg-roofliner-blue">
+  <section id="reviews" class="p-8 bg-primary-600">
     <div class="container flex flex-col gap-4 mx-auto">
       <h2 class="text-3xl font-bold text-center text-white uppercase">
         Reviews
