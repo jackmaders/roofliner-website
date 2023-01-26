@@ -2,6 +2,7 @@
 /** @type {import('tailwindcss').Config} */
 
 const defaultTheme = require("tailwindcss/defaultTheme");
+const plugin = require("tailwindcss/plugin");
 
 module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
@@ -39,6 +40,13 @@ module.exports = {
           900: "#31130b",
         },
       },
+      textShadow: {
+        sm: "0px 1px 2px var(--tw-shadow-color)",
+        DEFAULT: "1px 1px 3px var(--tw-shadow-color)",
+        lg: "3px 3px 6px var(--tw-shadow-color)",
+        xl: "0 8px 16px var(--tw-shadow-color)",
+        none: "1px 1px 3px var(--tw-shadow-color)",
+      },
       backgroundImage: {
         "header-background":
           "linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('@/assets/images/header-background.webp')",
@@ -53,5 +61,16 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-textshadow")],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "text-shadow": (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme("textShadow") }
+      );
+    }),
+  ],
 };
