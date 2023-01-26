@@ -30,7 +30,6 @@
         v-for="(conservatoryStyle, index) in conservatoryStyles"
         :key="index"
         :value="conservatoryStyle"
-        class="text-black"
       >
         {{ conservatoryStyle }}
       </option>

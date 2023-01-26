@@ -4,7 +4,7 @@
     class="flex flex-col gap-2 text-white border-2 backdrop:opacity-50 backdrop:bg-black rounded-xl bg-primary-600"
     @close="emit('update:modal', null)"
   >
-    <div class="flex items-center justify-between mx-2">
+    <div class="flex items-center justify-between gap-5 mx-2">
       <h2 class="text-xl font-bold uppercase">{{ modal?.title }}</h2>
       <font-awesome-icon
         :icon="'times'"
