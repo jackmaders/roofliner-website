@@ -6,7 +6,7 @@
     <div class="container px-4 mx-auto">
       <div class="flex items-center justify-between h-14">
         <!-- logo -->
-        <a href="#" class="">
+        <a href="#" class="" @click="showDropdown = false">
           <img
             class="h-4"
             src="@/assets/images/roofliner-logo.webp"
