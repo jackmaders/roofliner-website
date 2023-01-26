@@ -9,7 +9,7 @@ import TheNavbar from "./components/layout/TheNavbar.vue";
 
 import { shallowRef } from "vue";
 
-const currentModal = shallowRef();
+const currentModal = shallowRef(null);
 
 function updateModal(newModal) {
   currentModal.value = newModal;
