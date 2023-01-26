@@ -6,15 +6,19 @@
       </h2>
       <!-- TODO: layout for medium+ screens -->
       <div class="grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-4">
-        <OptionCard class="bg-shingle-tiles">slate tiling </OptionCard>
-        <OptionCard class="bg-slate-tiles">shingle tiling </OptionCard>
-        <OptionCard class="bg-velux-window">velux windows </OptionCard>
-        <OptionCard class="bg-supply-only">supply only </OptionCard>
-        <!-- TODO: add more options. 8 in total -->
-        <OptionCard class="bg-supply-only">supply only </OptionCard>
-        <OptionCard class="bg-supply-only">supply only </OptionCard>
-        <OptionCard class="bg-supply-only">supply only </OptionCard>
-        <OptionCard class="bg-supply-only">supply only </OptionCard>
+        <OptionCard
+          v-for="(card, index) in optionCards"
+          :key="index"
+          :class="card.backgroundClass"
+          @click="
+            emit('update:modal', {
+              title: card.title,
+              component: card.modalComponent,
+            })
+          "
+        >
+          {{ card.title }}
+        </OptionCard>
       </div>
     </div>
   </section>
@@ -22,4 +26,33 @@
 
 <script setup>
 import OptionCard from "./OptionCard.vue";
+import SlateModal from "../../modals/SlateModal.vue";
+import ShingleModal from "../../modals/ShingleModal.vue";
+import VeluxModal from "../../modals/VeluxModal.vue";
+import SupplyModal from "../../modals/SupplyModal.vue";
+
+const emit = defineEmits(["update:modal"]);
+
+const optionCards = [
+  {
+    title: "Slate Tiling",
+    modalComponent: SlateModal,
+    backgroundClass: "bg-slate-tiles",
+  },
+  {
+    title: "Shingle Tiling",
+    modalComponent: ShingleModal,
+    backgroundClass: "bg-shingle-tiles",
+  },
+  {
+    title: "Velux Windows",
+    modalComponent: VeluxModal,
+    backgroundClass: "bg-velux-window",
+  },
+  {
+    title: "Supply Only",
+    modalComponent: SupplyModal,
+    backgroundClass: "bg-supply-only",
+  },
+];
 </script>

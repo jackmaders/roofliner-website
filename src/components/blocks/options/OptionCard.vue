@@ -1,5 +1,6 @@
 <template>
-  <div
+  <button
+    @click="updateModal"
     class="flex items-center justify-center p-2 transition-all bg-no-repeat bg-cover rounded-2xl aspect-square hover:scale-110"
   >
     <span
@@ -7,9 +8,19 @@
     >
       <slot></slot>
     </span>
-  </div>
+  </button>
 </template>
 
 <script setup>
-// TODO: add modal content
+const emit = defineEmits(["update:modal"]);
+const props = defineProps({ modalComponent: Object, modalTitle: String });
+
+function updateModal() {
+  const modal = {
+    component: props.modalComponent,
+    title: props.modalTitle,
+  };
+
+  emit("update:modal", modal);
+}
 </script>

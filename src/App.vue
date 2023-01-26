@@ -21,7 +21,7 @@ function updateModal(newModal) {
   <main>
     <HeaderBlock @update:modal="updateModal"></HeaderBlock>
     <FeaturesBlock></FeaturesBlock>
-    <OptionsBlock></OptionsBlock>
+    <OptionsBlock @update:modal="updateModal"></OptionsBlock>
     <ReviewsBlock></ReviewsBlock>
   </main>
   <TheFooter></TheFooter>
