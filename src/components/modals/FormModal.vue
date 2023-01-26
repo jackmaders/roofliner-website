@@ -1,5 +1,5 @@
 <template>
-  <AppQuoteForm button-text="Submit request" />
+  <AppQuoteForm button-text="Submit request" method="dialog" />
 </template>
 
 <script setup>
