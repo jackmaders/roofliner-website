@@ -1,6 +1,6 @@
 <!-- TODO: add more content -->
 <template>
-  <footer id="footer" class="p-8 bg-roofliner-dark">
+  <footer id="footer" class="p-8 bg-black">
     <div class="container flex flex-col mx-auto">
       <h3 class="text-lg font-semibold text-white">Contact Us</h3>
       <p class="text-white">
