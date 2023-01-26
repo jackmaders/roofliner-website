@@ -30,9 +30,9 @@
 </template>
 
 <script setup>
-import HeaderForm from "./HeaderForm.vue";
-import FormModal from "../../modals/FormModal.vue";
-import AppButton from "../../shared/AppButton.vue";
+import HeaderForm from "./HeroForm.vue";
+import FormModal from "./HeroFormModal.vue";
+import AppButton from "./AppButton.vue";
 
 const emit = defineEmits(["update:modal"]);
 

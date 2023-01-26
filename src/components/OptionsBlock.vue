@@ -25,11 +25,11 @@
 </template>
 
 <script setup>
-import OptionCard from "./OptionCard.vue";
-import SlateModal from "../../modals/SlateModal.vue";
-import ShingleModal from "../../modals/ShingleModal.vue";
-import VeluxModal from "../../modals/VeluxModal.vue";
-import SupplyModal from "../../modals/SupplyModal.vue";
+import OptionCard from "./OptionsCard.vue";
+import SlateModal from "../../SlateModal.vue";
+import ShingleModal from "../../ShingleModal.vue";
+import VeluxModal from "../../VeluxModal.vue";
+import SupplyModal from "../../SupplyModal.vue";
 
 const emit = defineEmits(["update:modal"]);
 

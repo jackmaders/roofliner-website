@@ -3,5 +3,5 @@
 </template>
 
 <script setup>
-import AppQuoteForm from "../shared/AppQuoteForm.vue";
+import AppQuoteForm from "./AppQuoteForm.vue";
 </script>

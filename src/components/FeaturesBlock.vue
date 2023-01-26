@@ -24,5 +24,5 @@
 </template>
 
 <script setup>
-import FeatureItem from "./FeatureItem.vue";
+import FeatureItem from "../../blocks/features/FeatureItem.vue";
 </script>

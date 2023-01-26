@@ -1,11 +1,11 @@
 <script setup>
-import FeaturesBlock from "./components/blocks/features/FeaturesBlock.vue";
-import HeaderBlock from "./components/blocks/header/HeaderBlock.vue";
+import FeaturesBlock from "./components/FeaturesBlock.vue";
+import HeaderBlock from "./components/HeroBlock.vue";
 import OptionsBlock from "./components/blocks/options/OptionsBlock.vue";
-import ReviewsBlock from "./components/blocks/reviews/ReviewsBlock.vue";
-import TheFooter from "./components/layout/TheFooter.vue";
-import TheModal from "./components/layout/TheModal.vue";
-import TheNavbar from "./components/layout/TheNavbar.vue";
+import ReviewsBlock from "./components/ReviewsBlock.vue";
+import TheFooter from "./components/TheFooter.vue";
+import TheModal from "./components/TheModal.vue";
+import TheNavbar from "./components/TheNavbar.vue";
 
 import { shallowRef } from "vue";
 
